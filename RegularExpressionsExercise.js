@@ -7,7 +7,7 @@ function isThereAValidEmail(testString) {
     return EMAIL_REGEX.test(testString)
     
 }
-console.log(isThereAValidEmail("This is my email: bubbles8206@hotmail.com"));
+console.log(isThereAValidEmail("This is my email: bubbles8206@hotmail.com")); // Output: 2
 
 //Q2 Write a function to find the index of the first character of a valid URL
 
@@ -15,4 +15,5 @@ function findifValidURL(testString) {
     return testString.search(URL_REGEX);
 
 }
-console.log(findifValidURL("https://www.service.nsw.gov.au/"));
+console.log(findifValidURL("https://www.service.nsw.gov.au/")); // Output: 0
+console.log(findifValidURL("Service NSW https://www.service.nsw.gov.au/")); // Output: 12
